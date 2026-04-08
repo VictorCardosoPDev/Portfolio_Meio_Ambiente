@@ -95,8 +95,39 @@
             </div>
         </div>
     </section>
-
     <section id="projetos" class="projects bg-light">
+        <div class="nav-carousel-wrapper">
+    <button class="carousel-btn left-btn" id="slideLeft"><i class="fas fa-chevron-left"></i></button>
+    
+    <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-item active" data-filter="restaura" style="background-image: url('URL_DA_IMAGEM');">
+            <div class="carousel-overlay"></div>
+            <span>RestauraAPA</span>
+        </div>
+        
+        <div class="carousel-item" data-filter="itapua" style="background-image: url('URL_DA_IMAGEM');">
+            <div class="carousel-overlay"></div>
+            <span>Projeto Itapuã</span>
+        </div>
+    </div>
+
+    <button class="carousel-btn right-btn" id="slideRight"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<div class="project-grid">
+    <div class="project-card project-item" data-category="restaura">
+        <i class="fas fa-leaf icon-box"></i>
+        <h3>RestauraAPA: Bioma Pampa</h3>
+        <p>Restauração ecológica de campos nativos do bioma Pampa.</p>
+    </div>
+
+    <div class="project-card project-item" data-category="itapua" style="display: none;">
+        <i class="fas fa-tree icon-box"></i>
+        <h3>Projeto Itapuã</h3>
+        <p>Pesquisa e conservação da biodiversidade em áreas protegidas do sul do Brasil.</p>
+    </div>
+</div>
+
         <div class="container">
             <div class="section-header">
                 <h2>Projetos Estratégicos</h2>
@@ -322,7 +353,7 @@
             </div>
         </div>
     </div>
-
+    
     <section id="vantagens" class="projects">
         <div class="container">
             <h2>Venha fazer parte!</h2>
