@@ -122,7 +122,7 @@ function initProjectFilter() {
                 const cardCategory = card.getAttribute('data-category');
                 const visible = targetCategory === 'todos' || targetCategory === cardCategory;
 
-                card.style.display = visible ? 'block' : 'none';
+                card.style.display = visible ? 'grid' : 'none';
 
                 if (visible) {
                     card.style.animation = 'none';

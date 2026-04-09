@@ -127,7 +127,7 @@ nav {
 }
 
 /* ==========================================================================
-   4. SEÇÃO HERO (Destaque Inicial)
+   4. SEÇÃO HERO
    ========================================================================== */
 .hero {
     height: 100vh;
@@ -225,7 +225,7 @@ nav {
     font-size: 0.9rem;
 }
 /* ==========================================================================
-   CARROSSEL DE NAVEGAÇÃO (ESTILO BNDES)
+   CARROSSEL DE NAVEGAÇÃO
    ========================================================================== */
 .nav-carousel-wrapper {
     position: relative;
@@ -264,12 +264,17 @@ nav {
     cursor: pointer;
     transition: var(--transition);
     border: 3px solid transparent;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .carousel-item:hover, .carousel-item.active {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
     border-color: var(--primary-green);
-    box-shadow: var(--shadow-md);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.1), 
+        inset 0 -50px 25px rgba(74, 222, 128, 0.5); 
+        
+    z-index: 10;
 }
 
 /* Gradiente escuro para o texto ficar legível em cima da imagem */
@@ -277,7 +282,7 @@ nav {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 100%);
-    border-radius: 9px; /* Um pouco menor que a borda externa para encaixar perfeitamente */
+    border-radius: 9px; 
     z-index: 1;
 }
 
@@ -317,7 +322,103 @@ nav {
 
 .left-btn { left: 0; }
 .right-btn { right: 0; }
+/* ==========================================================================
+   10. CARDS LATERAIS
+   ========================================================================== */
 
+/* 1. Força o container a ter 2 colunas */
+.project-showcase-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px; /* Dá um espaço entre o projeto 1 e o projeto 2 */
+    align-items: stretch;
+}
+
+/* 2. Coluna da direita (Cards pequenos) */
+.side-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 3. Ajuste no card principal para a imagem preencher o topo */
+.main-project-card {
+    padding: 0 !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* 4. Estilo das caixinhas laterais com os ícones */
+.info-card {
+    background: var(--white);
+    border: 1px solid #e2ece7;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--accent-green);
+}
+
+.info-card i {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    background: rgba(45, 106, 79, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.info-text h4 {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* 5. Responsividade para celular (Empilha tudo) */
+@media (max-width: 968px) {
+    .project-showcase-layout {
+        grid-template-columns: 1fr;
+    }
+}
 /* Animação para quando os cards aparecerem */
 .project-item {
     animation: fadeInProject 0.5s ease forwards;
@@ -355,11 +456,11 @@ nav {
 }
 
 .project-card {
-    padding: 2.5rem;
     border-radius: 20px;
     background: var(--white);
     border: 1px solid #e2ece7;
     transition: 0.4s ease;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -367,6 +468,31 @@ nav {
     box-shadow: var(--shadow-md);
 }
 
+.project-image{
+    width: 100%;
+    height: 220px; 
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz o conteúdo esticar caso a altura do card mude */
+}
+
+.project-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.project-content p {
+    color: var(--text-muted);
+}
 .icon-box {
     font-size: 2.5rem;
     color: var(--primary-green);

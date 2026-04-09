@@ -98,15 +98,18 @@
 
         <section id="projetos" class="projects bg-light">
             <div class="container">
+                <div class="section-header">
+                    <h2>Projetos Estratégicos</h2>
+                </div>
                 <div class="nav-carousel-wrapper">
                     <button class="carousel-btn left-btn" id="slideLeft" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
 
                     <div class="carousel-track" id="carouselTrack">
-                        <div class="carousel-item active" data-filter="restaura" style="background-image: url('URL_DA_IMAGEM');">
+                        <div class="carousel-item active" data-filter="restaura" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80');">
                             <div class="carousel-overlay"></div>
                             <span>RestauraAPA</span>
                         </div>
-                        <div class="carousel-item" data-filter="itapua" style="background-image: url('URL_DA_IMAGEM');">
+                        <div class="carousel-item" data-filter="itapua" style="background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=400&q=80');">
                             <div class="carousel-overlay"></div>
                             <span>Projeto Itapuã</span>
                         </div>
@@ -116,43 +119,66 @@
                 </div>
 
                 <div class="project-grid">
-                    <div class="project-card project-item" data-category="restaura" data-modal-target="modalRestaurapa">
-                        <i class="fas fa-leaf icon-box"></i>
-                        <h3>RestauraAPA: Bioma Pampa</h3>
-                        <p>Restauração ecológica de campos nativos do bioma Pampa.</p>
-                    </div>
-                    <div class="project-card project-item" data-category="itapua" style="display: none;" data-modal-target="modalItapua">
-                        <i class="fas fa-tree icon-box"></i>
-                        <h3>Projeto Itapuã</h3>
-                        <p>Pesquisa e conservação da biodiversidade em áreas protegidas do sul do Brasil.</p>
-                    </div>
-                </div>
+    
+    <div class="project-showcase-layout project-item" data-category="restaura">
+        
+        <div class="project-card main-project-card" data-modal-target="modalRestaurapa">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Mãos segurando terra">
+            </div>
+            <div class="project-content">
+                <h3>RestauraAPA: Bioma Pampa</h3>
+                <p>Restauração ecológica de campos nativos do bioma Pampa.</p>
+            </div>
+        </div>
 
-                <div class="section-header">
-                    <h2>Projetos Estratégicos</h2>
+        <div class="side-info-column">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info-text">
+                    <h4>Localização</h4>
+                    <p>Rio Grande do Sul</p>
                 </div>
-                <div class="project-grid">
-                    <div class="project-card" data-modal-target="modalRestaurapa">
-                        <div class="icon-box"><i class="fas fa-leaf"></i></div>
-                        <h3>RestaurAPA: Bioma Pampa</h3>
-                        <p>Restauração ecológica de campos nativos do bioma Pampa</p>
-                        <div class="tags">
-                            <span>Ecologia de ecossistemas</span>
-                            <span>Restauração Ecológica</span>
-                            <span>Conservação do bioma Pampa</span>
-                        </div>
-                    </div>
+            </div>
 
-                    <div class="project-card" data-modal-target="modalItapua">
-                        <div class="icon-box"><i class="fas fa-tree"></i></div>
-                        <h3>Projeto Itapuã</h3>
-                        <p>Pesquisa e conservação da biodiversidade em áreas protegidas do sul do Brasil</p>
-                        <div class="tags">
-                            <span>Pesquisa</span>
-                            <span>Conservação da biodiversidade</span>
-                        </div>
-                    </div>
+            <div class="info-card">
+                <i class="fas fa-chart-pie"></i>
+                <div class="info-text">
+                    <h4>Área de Impacto</h4>
+                    <p>+500 Hectares</p>
                 </div>
+            </div>
+        </div>
+    </div> <div class="project-showcase-layout project-item" data-category="itapua" style="display: none;">
+        
+        <div class="project-card main-project-card" data-modal-target="modalItapua">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80" alt="Floresta">
+            </div>
+            <div class="project-content">
+                <h3>Projeto Itapuã</h3>
+                <p>Pesquisa e conservação da biodiversidade em áreas protegidas do sul do Brasil.</p>
+            </div>
+        </div>
+
+        <div class="side-info-column">
+            <div class="info-card">
+                <i class="fas fa-paw"></i>
+                <div class="info-text">
+                    <h4>Foco</h4>
+                    <p>Fauna Local</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-shield-alt"></i>
+                <div class="info-text">
+                    <h4>Parceria</h4>
+                    <p>SEMA-RS</p>
+                </div>
+            </div>
+        </div>
+    </div> 
             </div>
         </section>
 
