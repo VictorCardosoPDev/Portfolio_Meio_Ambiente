@@ -82,10 +82,10 @@ body {
    3. HEADER & NAVEGAÇÃO
    ========================================================================== */
 header {
-    padding: 1rem 8%;
+    padding: 2rem 8%;
     position: fixed;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: #013c7e;
     backdrop-filter: blur(5px);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
@@ -117,7 +117,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--earth-brown);
+    color: #f6c111;
     font-weight: 500;
     transition: var(--transition);
 }
