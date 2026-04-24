@@ -26,19 +26,53 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>
-                    <span id="changing-text">Tecnologia</span>
-                    <span class="white-text">pela</span>
-                    <span class="green-text">Sociedade</span>
-                </h1>
-                <p>Unindo tecnologia de ponta, saúde e preservação ambiental em um único ecossistema de inovação.</p>
-                <div class="hero-btns">
-                    <a href="#projetos" class="btn">Nossas Soluções</a>
-                    <a href="#vantagens" class="btn btn-outline">Faça Parte</a>
-                </div>
-            </div>
-        </section>
+
+    <div class="hero-slider">
+
+        <div class="slide active"
+            style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1013&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        </div>
+
+        <div class="slide"
+            style="background-image: url('./assets/parque-estadual-de-itapua.jpg');">
+        </div>
+
+        <div class="slide"
+            style="background-image: url('https://plus.unsplash.com/premium_photo-1664300792059-863ccfe55932?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        </div>
+
+    </div>
+    <button class="hero-arrow left-arrow">
+    <i class="fas fa-chevron-left"></i>
+</button>
+
+<button class="hero-arrow right-arrow">
+    <i class="fas fa-chevron-right"></i>
+</button>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+       <span class="hero-badge">
+        Universidade La Salle • Projetos Socioambientais
+    </span>
+
+    <h1 id="hero-title">
+        Projeto RestaurAPA
+    </h1>
+
+    <p id="hero-description">
+        Restauração ecológica de campos nativos do bioma Pampa.
+    </p>
+
+    <a href="#projetos" class="hero-btn">
+        Conheça nossos projetos
+    </a>
+
+    </div>
+
+</section>
 
         <section id="missao" class="mission">
             <div class="container">
@@ -47,13 +81,12 @@
                         <span class="badge">NOSSO IMPACTO</span>
                         <h2>Meio Ambiente</h2>
                         <p>
-                            Há mais de uma década, a Unilasalle Canoas tem desenvolvido projetos socioambientais no estado do 
-                            Rio Grande do Sul, aproximando o setor pesquisa, extensão e sociedade. Os projetos socioambientais 
-                            visam o desenvolvimento integrado da sociedade em diferentes esferas (financeira, econômica, relacional, ambiental e política), 
-                            criando uma forte rede de apoio e crescimento social sustentável.O Núcleo de Projetos Socioambientais possui experiência em ações 
-                            de restauração ecológica da vegetação nativa, produção agropecuária sustentável, soluções baseadas na natureza para cidades resilientes 
+                            Há mais de uma década, a Unilasalle Canoas tem desenvolvido projetos socioambientais no estado do
+                            Rio Grande do Sul, aproximando o setor pesquisa, extensão e sociedade. Os projetos socioambientais
+                            visam o desenvolvimento integrado da sociedade em diferentes esferas (financeira, econômica, relacional, ambiental e política),
+                            criando uma forte rede de apoio e crescimento social sustentável. O Núcleo de Projetos Socioambientais possui experiência em ações
+                            de restauração ecológica da vegetação nativa, produção agropecuária sustentável, soluções baseadas na natureza para cidades resilientes
                             e educação ambiental, financiadas por contratações com instituições estaduais e federais e fontes de recursos público-privados.
-
                         </p>
                     </div>
 
@@ -63,22 +96,6 @@
                             <div class="stat-info">
                                 <h3>+300</h3>
                                 <p>Espécies Registradas</p>
-                            </div>
-                        </div>
-
-                        <div class="stat-card">
-                            <div class="stat-icon"><i class="fas fa-microchip"></i></div>
-                            <div class="stat-info">
-                                <h3>IA</h3>
-                                <p>Monitoramento Preditivo</p>
-                            </div>
-                        </div>
-
-                        <div class="stat-card">
-                            <div class="stat-icon"><i class="fas fa-rocket"></i></div>
-                            <div class="stat-info">
-                                <h3>Incubadoras</h3>
-                                <p>HUB de Incubadoras</p>
                             </div>
                         </div>
 
@@ -100,84 +117,76 @@
                     <h2>Projetos Estratégicos</h2>
                 </div>
                 <div class="nav-carousel-wrapper">
-                    <button class="carousel-btn left-btn" id="slideLeft" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
 
                     <div class="carousel-track" id="carouselTrack">
                         <div class="carousel-item active" data-filter="restaura" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80');">
                             <div class="carousel-overlay"></div>
                             <span>PROJETO RESTAURAPA</span>
                         </div>
-                        <div class="carousel-item" data-filter="itapua" style="background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=400&q=80');">
+                        <div class="carousel-item" data-filter="itapua" style="background-image: url('./assets/parque-estadual-de-itapua.jpg');">
                             <div class="carousel-overlay"></div>
                             <span>PROJETO NOSSO ITAPUÃ</span>
                         </div>
                     </div>
 
-                    <button class="carousel-btn right-btn" id="slideRight" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
                 </div>
 
                 <div class="project-grid">
-    
-        <div class="project-showcase-layout project-item" data-category="restaura">
-        
-        <div class="project-card main-project-card" data-modal-target="modalRestaurapa">
-            <div class="project-image">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Mãos segurando terra">
-            </div>
-            <div class="project-content">
-                <h3>PROJETO RESTAURAPA</h3>
-                <p>Restauração ecológica de campos nativos do bioma Pampa.</p>
-            </div>
-        </div>
-
-        <div class="side-info-column">
-            <div class="info-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info-text">
-                    <h4>Localização</h4>
-                    <p>Rio Grande do Sul</p>
+                    <div class="project-showcase-layout project-item" data-category="restaura">
+                        <div class="project-card main-project-card" data-modal-target="modalRestaurapa">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Mãos segurando terra">
+                            </div>
+                            <div class="project-content">
+                                <h3>PROJETO RESTAURAPA</h3>
+                                <p>Restauração ecológica de campos nativos do bioma Pampa.</p>
+                            </div>
+                        </div>
+                        <div class="side-info-column">
+                            <div class="info-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info-text">
+                                    <h4>Localização</h4>
+                                    <p>Rio Grande do Sul</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-chart-pie"></i>
+                                <div class="info-text">
+                                    <h4>Área de Impacto</h4>
+                                    <p>+500 Hectares</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-showcase-layout project-item" data-category="itapua" style="display: none;">
+                        <div class="project-card main-project-card" data-modal-target="modalItapua">
+                            <div class="project-image">
+                                <img src="./assets/parque-estadual-de-itapua.jpg" alt="Floresta">
+                            </div>
+                            <div class="project-content">
+                                <h3>PROJETO NOSSO ITAPUÃ: BIOMAS PAMPA E MATA ATLÂNTICA</h3>
+                                <p>Controle de espécies vegetais exóticas invasoras e manejo da vegetação nativa.</p>
+                            </div>
+                        </div>
+                        <div class="side-info-column">
+                            <div class="info-card">
+                                <i class="fas fa-paw"></i>
+                                <div class="info-text">
+                                    <h4>Foco</h4>
+                                    <p>Fauna Local</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="info-text">
+                                    <h4>Parceria</h4>
+                                    <p>SEMA-RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="info-card">
-                <i class="fas fa-chart-pie"></i>
-                <div class="info-text">
-                    <h4>Área de Impacto</h4>
-                    <p>+500 Hectares</p>
-                </div>
-            </div>
-        </div>
-    </div> <div class="project-showcase-layout project-item" data-category="itapua" style="display: none;">
-        
-        <div class="project-card main-project-card" data-modal-target="modalItapua">
-            <div class="project-image">
-                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80" alt="Floresta">
-            </div>
-            <div class="project-content">
-                <h3>PROJETO NOSSO ITAPUÃ: BIOMAS PAMPA E MATA ATLÂNTICA</h3>
-                <p>Controle de espécies vegetais exóticas invasoras e manejo da vegetação nativa.</p>
-            </div>
-        </div>
-
-        <div class="side-info-column">
-            <div class="info-card">
-                <i class="fas fa-paw"></i>
-                <div class="info-text">
-                    <h4>Foco</h4>
-                    <p>Fauna Local</p>
-                </div>
-            </div>
-
-            <div class="info-card">
-                <i class="fas fa-shield-alt"></i>
-                <div class="info-text">
-                    <h4>Parceria</h4>
-                    <p>SEMA-RS</p>
-                </div>
-            </div>
-        </div>
-    </div> 
-            </div>
         </section>
 
         <div id="modalRestaurapa" class="modal">
@@ -288,7 +297,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <div class="modal-hero">
-                    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80" alt="Capa do Projeto">
+                    <img src="./assets/parque-estadual-de-itapua.jpg" alt="Capa do Projeto">
                 </div>
                 <h2><i class="fas fa-tree"></i> PROJETO NOSSO ITAPUÃ: BIOMAS PAMPA E MATA ATLÂNTICA</h2>
                 <div class="modal-body">
@@ -423,25 +432,26 @@
             </div>
         </div>
     </div>
-        
-        <section id="vantagens" class="projects">
+        <div class="section-divider"></div>
+
+        <section id="investidor" class="investidor">
             <div class="container">
-                <h2>Venha fazer parte!</h2>
-                <div class="project-grid">
-                    <div class="project-card highlight-card">
-                        <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                <h2>SEJA UM APOIADOR!</h2>
+                <div class="investidor-grid">
+                    <div class="investidor-card highlight-card">
+                        <div class="icon-box"><i class="fas fa-leaf"></i></div>
                         <h3>Valor ESG e Branding</h3>
-                        <p>Posicione sua marca como líder em inovação ambiental e saúde global perante investidores e clientes.</p>
+                        <p>Fortaleça sua marca ao apoiar projetos com impacto ambiental real, inovação sustentável e compromisso com o futuro da sociedade.</p>
                     </div>
-                    <div class="project-card highlight-card">
-                        <div class="icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
-                        <h3>Benefícios Fiscais</h3>
-                        <p>Oportunidade de deduções através de leis de incentivo à pesquisa e desenvolvimento tecnológico.</p>
+                    <div class="investidor-card highlight-card">
+                        <div class="icon-box"><i class="fas fa-globe-americas"></i></div>
+                        <h3>Impactos na Sociedade</h3>
+                        <p>Contribua diretamente para iniciativas que promovem restauração ecológica, pesquisa científica e desenvolvimento sustentável no Rio Grande do Sul.</p>
                     </div>
-                    <div class="project-card highlight-card">
-                        <div class="icon-box"><i class="fas fa-rocket"></i></div>
-                        <h3>Acesso à Inovação</h3>
-                        <p>Prioridade em licenciamentos e propriedade intelectual gerada pela equipe de pesquisa.</p>
+                    <div class="investidor-card highlight-card">
+                        <div class="icon-box"><i class="fas fa-microscope"></i></div>
+                        <h3>Acesso à Pesquisas</h3>
+                        <p>Aproxime sua instituição de projetos acadêmicos e científicos, com acesso a conhecimento, inovação e soluções aplicadas ao meio ambiente.</p>
                     </div>
                 </div>
             </div>

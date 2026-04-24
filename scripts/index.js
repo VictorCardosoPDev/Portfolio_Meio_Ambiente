@@ -142,3 +142,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', setActiveNavLink);
 });
+
+const slides = document.querySelectorAll(".slide");
+const heroTitle = document.getElementById("hero-title");
+const heroDescription = document.getElementById("hero-description");
+
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+const heroButton = document.querySelector(".hero-btn");
+
+const projectData = [
+    {
+        title: "Projeto RestaurAPA",
+        description: "Restauração ecológica de campos nativos do bioma Pampa.",
+        buttonText: "Conheça nossos projetos",
+        buttonLink: "#projetos"
+    },
+    {
+        title: "Projeto Nosso Itapuã",
+        description: "Controle de espécies invasoras e manejo da vegetação nativa.",
+        buttonText: "Conheça nossos projetos",
+        buttonLink: "#projetos"
+    },
+    {
+        title: "Projetos Futuros",
+        description: "Faça parte desse futuro.",
+        buttonText: "Seja um apoiador",
+        buttonLink: "#investidor"
+    }
+];
+
+let currentSlide = 0;
+
+function updateSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+
+    slides[currentSlide].classList.add("active");
+
+    heroTitle.textContent = projectData[currentSlide].title;
+    heroDescription.textContent = projectData[currentSlide].description;
+
+    heroButton.textContent = projectData[currentSlide].buttonText;
+    heroButton.setAttribute("href", projectData[currentSlide].buttonLink);
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlide();
+}
+
+rightArrow.addEventListener("click", nextSlide);
+leftArrow.addEventListener("click", prevSlide);
+
+setInterval(nextSlide, 5000);
