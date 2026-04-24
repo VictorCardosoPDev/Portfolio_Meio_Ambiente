@@ -55,7 +55,7 @@ body {
     display: inline-block;
     margin-top: 2rem;
     padding: 1rem 2.5rem;
-    background: var(--primary-green);
+    background:#003B84;
     color: var(--white);
     text-decoration: none;
     border-radius: 50px;
@@ -85,7 +85,7 @@ header {
     padding: 2rem 8%;
     position: fixed;
     width: 100%;
-    background: #013c7e;
+    background: rgba(245, 245, 245, 0.808);
     backdrop-filter: blur(5px);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
@@ -97,11 +97,9 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--primary-green);
-    text-decoration: none;
+
+.logo img{
+    width: 200px;
 }
 
 .logo span {
@@ -117,13 +115,13 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #f6c111;
-    font-weight: 500;
+    color: #003B84;;
+    font-weight: 700;
     transition: var(--transition);
 }
 
 .nav-links a:hover {
-    color: var(--primary-green);
+    color: #00A651;
 }
 
 /* ==========================================================================
@@ -135,7 +133,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');
+    background: url('https://plus.unsplash.com/premium_photo-1664300792059-863ccfe55932?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -164,7 +162,7 @@ nav {
    ========================================================================== */
 .mission {
     padding: 100px 8%;
-    background: var(--white);
+    background: whitesmoke;
 }
 
 .mission-grid {
@@ -176,7 +174,7 @@ nav {
 
 .mission-text h2 {
     font-size: 2.8rem;
-    color: var(--text-dark);
+    color: #00A651;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -212,7 +210,7 @@ nav {
 
 .stat-icon {
     font-size: 2rem;
-    color: var(--primary-green);
+    color: #00A651;
 }
 
 .stat-info h3 {
@@ -272,7 +270,7 @@ nav {
     border-color: var(--primary-green);
     box-shadow: 
         0 15px 30px rgba(0, 0, 0, 0.1), 
-        inset 0 -50px 25px rgba(74, 222, 128, 0.5); 
+        inset 0 -50px 25px #00A651; 
         
     z-index: 10;
 }
@@ -281,7 +279,7 @@ nav {
 .carousel-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(to top, #00A651 0.8 0%, #00A651 0.1 100%);
     border-radius: 9px; 
     z-index: 1;
 }
@@ -316,7 +314,7 @@ nav {
 }
 
 .carousel-btn:hover {
-    background-color: var(--accent-green);
+    background-color: #00A651;
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -618,8 +616,8 @@ nav {
 .contact {
     padding: 80px 8%;
     text-align: center;
-    background: var(--primary-green);
-    color: var(--white);
+    color: #003B84;
+    font-weight: 700;
 }
 
 .contact h2 {
@@ -631,7 +629,7 @@ nav {
 }
 
 .social-links a {
-    color: var(--white);
+    color: #003B84;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.5rem;
@@ -646,8 +644,7 @@ nav {
    ========================================================================== */
     footer{
         text-align: center;
-        background-color: #2d6a4f;
-        color: white;
+        background-color: whitesmoke;
     }
 /* ==========================================================================
    9. RESPONSIVIDADE
