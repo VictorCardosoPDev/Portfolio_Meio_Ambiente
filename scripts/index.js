@@ -1,28 +1,3 @@
-const words = ['Tecnologia', 'Saúde', 'Meio Ambiente'];
-let currentIndex = 0;
-
-function updateHeroText() {
-    const textElement = document.getElementById('changing-text');
-
-    if (!textElement) {
-        return;
-    }
-
-    textElement.style.opacity = '0';
-    textElement.style.transform = 'translateY(5px)';
-
-    setTimeout(() => {
-        currentIndex = (currentIndex + 1) % words.length;
-        textElement.textContent = words[currentIndex];
-        textElement.style.opacity = '1';
-        textElement.style.transform = 'translateY(0)';
-    }, 500);
-}
-
-function initHeroText() {
-    updateHeroText();
-    setInterval(updateHeroText, 3000);
-}
 
 function setActiveNavLink() {
     const sections = document.querySelectorAll('section');
@@ -89,24 +64,6 @@ function initModalHandlers() {
     });
 }
 
-function initCarousel() {
-    const buttonLeft = document.getElementById('slideLeft');
-    const buttonRight = document.getElementById('slideRight');
-    const track = document.getElementById('carouselTrack');
-
-    if (!buttonLeft || !buttonRight || !track) {
-        return;
-    }
-
-    buttonLeft.addEventListener('click', () => {
-        track.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-
-    buttonRight.addEventListener('click', () => {
-        track.scrollBy({ left: 300, behavior: 'smooth' });
-    });
-}
-
 function initProjectFilter() {
     const carouselItems = document.querySelectorAll('.carousel-item');
     const projectCards = document.querySelectorAll('.project-item');
@@ -135,8 +92,6 @@ function initProjectFilter() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initHeroText();
-    initCarousel();
     initProjectFilter();
     initModalHandlers();
 
